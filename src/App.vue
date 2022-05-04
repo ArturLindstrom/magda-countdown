@@ -1,17 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+     <vue3-flip-countdown deadline="2022-06-17 16:00:00"
+     countdownSize="10rem"
+     mainColor="black"
+     :flipAnimation="false"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+
 </script>
 
 <style>
@@ -21,6 +19,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display: grid;
+  place-items: center center;
+  height: 100vh;
 }
+
+html,body {
+  margin: 0;
+}
+
 </style>
