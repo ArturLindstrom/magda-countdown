@@ -2,8 +2,8 @@
   <div id="app">
      <vue3-flip-countdown deadline="2022-06-17 16:00:00"
      countdownSize="10rem"
-     mainColor="black"
-     :flipAnimation="false"/>
+     mainColor="white"
+     :flipAnimation="true"/>
   </div>
 </template>
 
